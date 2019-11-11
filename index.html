@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+    <title>WeUI</title>
+    <link rel="stylesheet" href="./vendor/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1498049_er94sxw596a.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.3/style/weui.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.1/css/jquery-weui.min.css">
+
+    <!-- swiper css -->
+    <link rel="./vendor/swiper/style/swiper.min.css">
+
+    <style>
+        body,
+        html {
+            height: 100%;
+            -webkit-tap-highlight-color: transparent;
+            margin: 0;
+            padding: 0;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            background: #FFFFFF;
+        }
+
+        .swiper-container {
+            width: 98%;
+            height: 180px;
+            border-radius: 7px;
+            margin: 10px auto;
+        }
+
+        .swiper-slide {
+            width: 100%;
+            height: 180px;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body ontouchstart>
+    <div class="weui-tab">
+        <div class="weui-tab__bd">
+            <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+                <div class="weui-search-bar" id="searchBar">
+                    <form class="weui-search-bar__form">
+                        <div class="weui-search-bar__box">
+                            <i class="weui-icon-search"></i>
+                            <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索"
+                                required="">
+                            <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+                        </div>
+                        <label class="weui-search-bar__label" id="searchText">
+                            <i class="weui-icon-search"></i>
+                            <span>搜索</span>
+                        </label>
+                    </form>
+                    <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+                </div>
+
+
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./img/swiper_img/1.jpg" /></div>
+                        <div class="swiper-slide"><img src="./img/swiper_img/2.jpg" /></div>
+                        <div class="swiper-slide"><img src="./img/swiper_img/3.jpg" alt=""></div>
+                    </div>
+                    <!-- 如果需要分页器 -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="weui-cells">
+                    <!-- 系统消息 -->
+                    <div class="weui-cell weui-cell_access">
+                        <div class="weui-cell__bd">
+                            <span style="vertical-align: middle">
+                                <i class="iconfont icon-notification" style="padding-left: 5px;"></i>
+                                从今日起，一次性续全年打8折啦！
+                                <span class="weui-badge" style="top: 0rem;position: absolute;">New</span>
+                            </span>
+                        </div>
+                        <div class="weui-cell__ft"></div>
+                    </div>
+                </div>
+                <!-- 日常操作按钮快捷方式 -->
+                <div class="weui-grids">
+                    <a href="" class="weui-grid js_grid">
+                        <div class="weui-grid__icon">
+                            <img src="./img/Charge.png" alt="">
+                        </div>
+                        <p class="weui-grid__label">
+                            充电站
+                        </p>
+                    </a>
+                    <a href="" class="weui-grid js_grid">
+                        <div class="weui-grid__icon">
+                            <img src="./img/location.png" alt="">
+                        </div>
+                        <p class="weui-grid__label">
+                            车库
+                        </p>
+                    </a>
+                    <a href="" class="weui-grid js_grid">
+                        <div class="weui-grid__icon">
+                            <img src="./img/Recharge.png" alt="">
+                        </div>
+                        <p class="weui-grid__label">
+                            车位续费
+                        </p>
+                    </a>
+                    <a href="" class="weui-grid js_grid">
+                        <div class="weui-grid__icon">
+                            <img src="./img/buy.png" alt="">
+                        </div>
+                        <p class="weui-grid__label">
+                            我要购买
+                        </p>
+                    </a>
+                    <a href="" class="weui-grid js_grid">
+                        <div class="weui-grid__icon">
+                            <img src="./img/binding.png" alt="">
+                        </div>
+                        <p class="weui-grid__label">
+                            车位绑定
+                        </p>
+                    </a>
+                    <a href="" class="weui-grid js_grid">
+                        <div class="weui-grid__icon">
+                            <img src="./img/feedback.png" alt="">
+                        </div>
+                        <p class="weui-grid__label">
+                            意见反馈
+                        </p>
+                    </a>
+                </div>
+                <!-- 图文宣传 -->
+                <div class="weui-panel__bd" style="    height: 130px;">
+                    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                        <div class="weui-media-box__hd" style="height: 140px;width: 140px;">
+                            <img class="weui-media-box__thumb" src="./img/swiper_img/6.jpg" alt="">
+                        </div>
+                        <div class="weui-media-box__bd" style="margin-top: -58px;">
+                            <h4 class="weui-media-box__title">相信品牌的力量</h4>
+                            <p class="weui-media-box__desc">直指竞争本质，构建新的认知直抵消费者心智，能记忆、能搜索，新品牌变成老朋友</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- 联系我们 -->
+                <div style="height: 200px;width: 100%;background: #FD6C40; color: white; text-align: center;">
+
+                    <span style="line-height: 2.2rem;">
+                        <p><strong>让品牌成为消费者理想的选择</strong></p>
+                    </span>
+                    <span style="line-height: 1.17rem;font-size: 0.7rem;">
+                        <p>直指竞争本质，构建新的认知</p>
+                    </span>
+                    <span style="line-height: 1.5rem;font-size: 0.7rem;">
+                        <p>直抵消费者心智，能记忆、能搜索，新品牌变成老朋友</p>
+                    </span>
+                    <span style="line-height: 1.47rem;border: 1px solid white; display: block; width: 25%; border-radius: 15px;
+                    height: 27px;margin: 0 auto;">联系我们<i class="iconfont icon-phone_light"></i></span>
+                    </span>
+                </div>
+            </div>
+            <!-- 帮助中心 -->
+            <div id="tab3" class="weui-tab__bd-item">
+                <h1>页面三</h1>
+            </div>
+        </div>
+
+        <!-- weui-tabbar -->
+        <div class="weui-tabbar">
+            <a href="#tab1" class="weui-tabbar__item weui-bar__item_on">
+                <div class="weui-tabbar__icon   ">
+                    <i class="iconfont icon-home_light"></i>
+                </div>
+                <p class="weui-tabbar__label">管理中心</p>
+            </a>
+            <a href="javascript:;" class="weui-tabbar__item open-popup " id="moreOperate" data-target="">
+                <div class="weui-tabbar__icon">
+                    <i class="iconfont icon-saoyisao"></i>
+                </div>
+                <p class="weui-tabbar__label"> 扫一扫</p>
+            </a>
+            <a href="#tab3" class="weui-tabbar__item">
+                <div class="weui-tabbar__icon">
+                    <i class="iconfont icon-service"></i>
+                </div>
+                <p class="weui-tabbar__label">帮助中心</p>
+            </a>
+        </div>
+    </div>
+
+
+
+    <!-- body 最后 -->
+    <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/jquery-weui.min.js"></script>
+
+    <!-- 如果使用了某些拓展插件还需要额外的JS -->
+    <script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/swiper.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/city-picker.min.js"></script>
+    <!-- 消除click延迟 -->
+    <script src="./vendor/fastclick.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('.weui-tabbar__item').on('click', function () {
+                $(this).addClass('weui-bar__item_on').siblings('.weui-bar__item_on').removeClass('weui-bar__item_on');
+                $(this).siblings('.weui-bar__item--on').removeClass('weui-bar__item--on');
+            });
+            FastClick.attach(document.body);
+
+            var swiper = new Swiper('.swiper-container', {
+                // 轮播图的方向，也可以是vertical方向
+                direction: 'horizontal',
+                //播放速度
+                loop: true,
+                // 自动播放时间
+                autoplay: true,
+                // 播放的速度
+                speed: 2000,
+                // 如果需要分页器，即下面的小圆点
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+                // 这样，即使我们滑动之后， 定时器也不会被清除
+                autoplayDisableOnInteraction: false,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        });
+    </script>
+</body>
+
+</html>
